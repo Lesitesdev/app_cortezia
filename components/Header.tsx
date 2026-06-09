@@ -62,7 +62,7 @@ export default function Header() {
       group-hover:text-rose-500
     "
   >
-    Cortezia
+    Cortesia
   </h1>
 </Link>
 

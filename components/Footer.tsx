@@ -7,7 +7,7 @@ export default function Footer() {
 
           <div>
             <h3 className="text-3xl font-bold mb-4">
-              Cortezia
+              Cortesia
             </h3>
 
             <p className="text-stone-300 leading-8">
@@ -55,7 +55,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-stone-700 mt-16 pt-8 text-center text-stone-400">
-          © 2026 Cortezia. Todos os direitos reservados.
+          © 2026 Cortesia. Todos os direitos reservados.
         </div>
 
       </div>
