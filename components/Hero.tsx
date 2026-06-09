@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -21,11 +22,26 @@ export default function Hero() {
             qualificados e reserve seu horário sem filas ou ligações.
           </p>
 
-          {/* BOTÕES */}
-          <div className="flex flex-col sm:flex-row gap-4 mb-10">
-            <button className="bg-rose-500 hover:bg-rose-600 text-white px-8 py-4 rounded-full font-medium transition">
-              Encontrar Serviços
-            </button>
+<div className="flex flex-col sm:flex-row gap-4 mb-10">
+  <Link
+    href="/services"
+    className="
+      bg-rose-500
+      hover:bg-rose-600
+      text-white
+      px-8
+      py-4
+      rounded-full
+      font-medium
+      transition
+      inline-flex
+      items-center
+      justify-center
+    "
+  >
+    Encontrar Serviços
+  </Link>
+
 
             <button className="border border-stone-300 hover:bg-white px-8 py-4 rounded-full font-medium transition">
               Cadastrar Meu Negócio

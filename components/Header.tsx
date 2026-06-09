@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Header() {
   return (
     <header
@@ -27,29 +29,42 @@ export default function Header() {
         "
       >
         {/* Logo */}
-        <div className="flex items-center gap-3">
-          <div
-            className="
-              w-11
-              h-11
-              rounded-full
-              bg-gradient-to-r
-              from-rose-500
-              to-pink-500
-              flex
-              items-center
-              justify-center
-              text-white
-              shadow-md
-            "
-          >
-            ✂
-          </div>
+       <Link
+  href="/"
+  className="flex items-center gap-3 group"
+>
+  <div
+    className="
+      w-11
+      h-11
+      rounded-full
+      bg-gradient-to-r
+      from-rose-500
+      to-pink-500
+      flex
+      items-center
+      justify-center
+      text-white
+      shadow-md
+      transition
+      group-hover:scale-105
+    "
+  >
+    ✂
+  </div>
 
-          <h1 className="text-2xl font-bold text-stone-800">
-            Cortezia
-          </h1>
-        </div>
+  <h1
+    className="
+      text-2xl
+      font-bold
+      text-stone-800
+      transition
+      group-hover:text-rose-500
+    "
+  >
+    Cortezia
+  </h1>
+</Link>
 
         {/* Ações */}
         <div className="flex items-center gap-3">
