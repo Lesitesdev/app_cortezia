@@ -7,31 +7,88 @@ export default function Header() {
         left-0
         right-0
         z-50
-        bg-[#f7f3f2]/95
-        backdrop-blur-md
+        bg-[#f7f3f2]/90
+        backdrop-blur-xl
         border-b
-        border-gray-200
-        shadow-sm
+        border-stone-200
       "
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-8 py-4">
+      <div
+        className="
+          max-w-7xl
+          mx-auto
+          px-4
+          sm:px-6
+          lg:px-8
+          py-4
+          flex
+          items-center
+          justify-between
+        "
+      >
+        {/* Logo */}
         <div className="flex items-center gap-3">
-          <div className="bg-rose-500 w-10 h-10 rounded-full flex items-center justify-center text-white">
+          <div
+            className="
+              w-11
+              h-11
+              rounded-full
+              bg-gradient-to-r
+              from-rose-500
+              to-pink-500
+              flex
+              items-center
+              justify-center
+              text-white
+              shadow-md
+            "
+          >
             ✂
           </div>
 
-          <h1 className="text-2xl font-semibold text-stone-800">
+          <h1 className="text-2xl font-bold text-stone-800">
             Cortezia
           </h1>
         </div>
 
-        <div className="flex items-center gap-6">
-          <button className="text-stone-600 hover:text-stone-900 transition">
+        {/* Ações */}
+        <div className="flex items-center gap-3">
+          <button
+            className="
+              hidden
+              sm:flex
+              items-center
+              justify-center
+              px-5
+              py-3
+              rounded-full
+              border
+              border-stone-300
+              text-stone-700
+              font-medium
+              hover:bg-white
+              transition
+            "
+          >
             Entrar
           </button>
 
-          <button className="bg-rose-500 text-white px-6 py-3 rounded-full hover:bg-rose-600 transition">
-            Começar
+          <button
+            className="
+              px-6
+              py-3
+              rounded-full
+              bg-gradient-to-r
+              from-rose-500
+              to-pink-500
+              text-white
+              font-semibold
+              shadow-md
+              hover:scale-105
+              transition
+            "
+          >
+            Começar grátis
           </button>
         </div>
       </div>
