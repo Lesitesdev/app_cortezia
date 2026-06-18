@@ -23,11 +23,8 @@ export default function Testimonials() {
   return (
     <section className="py-32 bg-white">
       <div className="max-w-7xl mx-auto px-8">
-
         <div className="text-center mb-16">
-          <span className="text-rose-500 font-medium">
-            Depoimentos
-          </span>
+          <span className="text-rose-500 font-medium">Depoimentos</span>
 
           <h2 className="text-5xl font-bold text-[#3b2323] mt-4">
             O que nossos clientes dizem
@@ -39,56 +36,27 @@ export default function Testimonials() {
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
-
           {testimonials.map((item) => (
             <div
               key={item.id}
-              className="
-                bg-[#f7f3f0]
-                p-8
-                rounded-3xl
-                border
-                border-stone-200
-              "
+              className="bg-[#f7f3f0] p-8 rounded-3xl border border-stone-200"
             >
-              <div className="text-amber-400 text-xl mb-6">
-                ⭐⭐⭐⭐⭐
-              </div>
+              <div className="text-amber-400 text-xl mb-6">★★★★★</div>
 
-              <p className="text-stone-600 leading-8 mb-8">
-                "{item.texto}"
-              </p>
+              <p className="text-stone-600 leading-8 mb-8">“{item.texto}”</p>
 
               <div className="flex items-center gap-4">
-                <div
-                  className="
-                    w-12
-                    h-12
-                    rounded-full
-                    bg-rose-500
-                    text-white
-                    flex
-                    items-center
-                    justify-center
-                    font-bold
-                  "
-                >
+                <div className="w-12 h-12 rounded-full bg-rose-500 text-white flex items-center justify-center font-bold">
                   {item.nome[0]}
                 </div>
 
                 <div>
-                  <p className="font-semibold text-[#3b2323]">
-                    {item.nome}
-                  </p>
-
-                  <p className="text-sm text-stone-500">
-                    Cliente
-                  </p>
+                  <p className="font-semibold text-[#3b2323]">{item.nome}</p>
+                  <p className="text-sm text-stone-500">Cliente</p>
                 </div>
               </div>
             </div>
           ))}
-
         </div>
       </div>
     </section>

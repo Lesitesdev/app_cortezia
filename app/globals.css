@@ -12,19 +12,18 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
+  background: #f6f1ee;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-   background: #F6F1EE;
 }
 
+.scrollbar-hide::-webkit-scrollbar {
+  height: 0;
+  display: none;
+}
 
-
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
